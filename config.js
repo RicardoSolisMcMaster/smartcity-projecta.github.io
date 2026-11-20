@@ -13,7 +13,7 @@ window.SITE_CONFIG = {
     tagline: "Course Project: Smart Cities and Communities",
 
     studentName: "Ricardo Solis",
-    program: "Program / Department",
+    program: "Btech Automation: Smart Systems",
     university: "McMaster University, Canada",
     email: "solisr@mcmaster.com"
   },
