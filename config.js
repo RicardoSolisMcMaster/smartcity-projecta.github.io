@@ -1,4 +1,5 @@
-// config.js (Students edit only this file)
+
+ // config.js (Students edit only this file)
 window.SITE_CONFIG = {
   pageTitle: "Academic Digital Twin Case Study | Student Showcase",
   homeUrl: "https://roadwayvr.com",
@@ -13,9 +14,9 @@ window.SITE_CONFIG = {
     tagline: "Course Project: Smart Cities and Communities",
 
     studentName: "Ricardo Solis",
-    program: "Btech Automation: Smart Systems",
+    program: "Bachelor of Technology - Automation Engineering Technology",
     university: "McMaster University, Canada",
-    email: "solisr@mcmaster.com"
+    email: "ricardo.solis@smartcityengineering.ca"
   },
 
   disclaimer: {
@@ -28,42 +29,42 @@ window.SITE_CONFIG = {
   },
 
   theme: {
-    heroBg: "#111111",
-    heroText: "#ffffff",
-    pageBg: "#f8fafc",
-    accent: "#7c3aed"
+    heroBg: "#14283F",
+    heroText: "#FFFFFF",
+    pageBg: "#F4F7FA",
+    accent: "#00A6A6"
   },
 
   dividers: {
-    dividerBg: "#f9f9f9",
-    dividerText: "#ffffff"
+    dividerBg: "#203B55",
+    dividerText: "#FFFFFF"
   },
 
   footer: {
-	  footerBg: "#111111",
-	  footerText: "#ffffff",
-	  footerBorder: "#222222",
-	
-	  homeLinkText: "RoadwayVR",
-	
-	  templateCredit:
-	    "This academic showcase template was developed by RoadwayVR.",
-	
-	  templateCreditLinkText:
-	    "Learn more at RoadwayVR.com",
-	
-	  templateCreditUrl:
-	    "https://roadwayvr.com"
+    footerBg: "#14283F",
+    footerText: "#FFFFFF",
+    footerBorder: "#00A6A6",
+
+    homeLinkText: "RoadwayVR",
+
+    templateCredit:
+      "This academic showcase template was developed by RoadwayVR.",
+
+    templateCreditLinkText:
+      "Learn more at RoadwayVR.com",
+
+    templateCreditUrl:
+      "https://roadwayvr.com"
   },
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "Development of Digital Twin of a Railway Corridor Using Unity Game Engine and SUMO Traffic Simulation",
+    projectTitle: "SUMO-Based Traffic Simulation and Analysis of Kipling Avenue and Dixon Road: Autonomous Vehicles and Signal Timing Optimization",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
-    heroVideoAlt: "Autoplay preview video (academic project)",
+    heroVideoAlt: "SUMO roadway simulation of the Kipling Avenue and Dixon Road intersection",
     videoCaption:
-      "Autoplay preview (≈20 seconds): raw video → Traffic Simulation → Blender → Unity → Results"
+      "Project overview: GIS road network → NETEDIT development → SUMO traffic simulation → HDV and CAV comparison → Signal timing intervention → Speed-Density results"
   },
 
   caseStudy: {
@@ -71,26 +72,26 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-			"Global freight rail is growing and remains strategically important.",
-			"Rail carries about 18% of EU inland freight, 36% in the U.S., and 27% in India.",
-			"Road dominates many freight systems, so rail often receives less attention.",
-			"In Canada, rail accounted for 10.5% of international merchandise trade value in 2024."
+      "Urban traffic congestion affects roadway efficiency and travel reliability.",
+      "The study examines Kipling Avenue and Dixon Road in Toronto, Ontario.",
+      "NETEDIT and SUMO enable digital road network development and traffic simulation.",
+      "Speed-density analysis supports comparisons of vehicle behaviour and signal operations."
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-			"Railway operations are hard to assess.",
-			"3D asset creation is time-consuming.",
-			"2D models lack immersion.",
-			"Results are difficult to communicate."
+      "A digital roadway and traffic baseline is needed to evaluate the selected intersection.",
+      "The effects of autonomous vehicles on traffic performance require simulation.",
+      "Existing signal timing may contribute to congestion on the selected approach.",
+      "The effectiveness of a signal timing intervention must be evaluated."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-			"Simulate train scheduling, signaling, and capacity in SUMO.",
-			"Create 3D digital assets using generative AI and blender.",
-			"Create 3D rail environment and VR video in Unity.",
-			"Present results in different styles through KPIs, figures, and a showcase website."
+      "Develop the Kipling-Dixon SUMO road network and characterize the 100% HDV baseline.",
+      "Compare speed-density relationships for 100% HDVs and 100% CAVs on edge E61.",
+      "Evaluate a signal timing intervention using speed-density results on edge E61.",
+      "Present project methods and findings through an academic showcase website."
     ]
   },
 
@@ -98,23 +99,23 @@ window.SITE_CONFIG = {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Train Scheduling and Signaling (SUMO Simulation)",
-				text: "Build the rail network and test routing, signaling, and timetables.",
+        title: "Step 1: Study Area Selection",
+        text: "Select the Kipling Avenue and Dixon Road intersection in Toronto using GIS imagery.",
         image: "assets/img/image2.jpg"
       },
       {
-				title: "Step 2: Digital Twin Assets Developement (Blender)",
-				text: "Create a 3D railway assets using generative AI and blender.",
+        title: "Step 2: Road Network Development (NETEDIT)",
+        text: "Model roads, lanes, junctions, turning movements, and traffic connections in NETEDIT.",
         image: "assets/img/image3.jpg"
       },
       {
-				title: "Step 3: Immersive VR Visualization (Unity)",
-				text: "Create a 3D railway scene and produce a VR 360-degree video.",
+        title: "Step 3: Traffic Simulation and Scenario Development (SUMO)",
+        text: "Simulate HDV and CAV traffic using consistent demand, routes, and signal settings.",
         image: "assets/img/image4.jpg"
       },
       {
-				title: "Step 4: Results & Communication (Figures + Showcase Website)",
-				text: "Summarize results using figures, KPIs, and the showcase website.",
+        title: "Step 4: Intervention and Results Analysis",
+        text: "Modify signal timing and compare speed-density results across three scenarios on edge E61.",
         image: "assets/img/image5.jpg"
       }
     ]
@@ -124,71 +125,71 @@ window.SITE_CONFIG = {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Train Scheduling & Signaling (SUMO)",
+        title: "Module 1: Study Area Selection",
         bullets: [
-				  { text: "Build a simulated rail network in SUMO with train routing and maximum operating speed." },
-          { text: "Design fixed-block rail signals and define station stops along the corridor." },
-          { text: "Configure timetable, scheduled departures, running time, dwell time, and headway." }
+          { text: "Select Kipling Avenue and Dixon Road in Toronto as the study intersection." },
+          { text: "Use the assigned GIS map to identify roads, junctions, and study boundaries." },
+          { text: "Establish the roadway geometry reference for the SUMO network." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Digital Twin Assets Developement (Blender)",
+        title: "Module 2: Road Network Development (NETEDIT)",
         bullets: [
-          { text: "Generative AI: use Meshy.ai tool to develop different assets." },
-          { text: "From generative AI to belnder." },
-          { text: "Preprocessing assets in Blender ." }
+          { text: "Import the GIS background and construct the road network in NETEDIT." },
+          { text: "Configure major and local roads, lane counts, and turning lanes." },
+          { text: "Verify junction geometry, lane connections, and permitted turning movements." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Immersive VR Visualization (Unity)",
+        title: "Module 3: Traffic Simulation (SUMO)",
         bullets: [
-				  { text: "Develop a 3D railway environment including stations, buildings, trees, and rolling stock." },
-          { text: "Configure visualization fundamentals: lighting, camera position, time of day, and scene composition." },
-          { text: "Produce a VR 360-degree video output for immersive presentation and portfolio use." }
+          { text: "Configure traffic demand, vehicle routes, and traffic signal phases." },
+          { text: "Simulate 100% HDV and 100% CAV scenarios under controlled conditions." },
+          { text: "Extract speed and density data from the same upstream edge E61." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Module 4: Results & Communication",
+        title: "Module 4: Signal Intervention and Results",
         bullets: [
-          { text: "Dashboard or plot set: KPI cards, bar charts, and/or time series." },
-          { text: "Scenario story: what changed, what improved, and what tradeoffs appeared." },
-          { text: "Limitations + next steps: what data would strengthen confidence." }
+          { text: "Reallocate signal green time while maintaining a 60-second cycle." },
+          { text: "Simulate the intervention using 100% HDVs and unchanged traffic demand." },
+          { text: "Compare speed-density diagrams and evaluate changes in roadway performance." }
         ],
         image: "assets/img/image5.jpg"
       }
     ]
   },
 
-	results: {
-			title: "Results & Potential Improvements",
-			subtitle:
-				"Train schedule simulation outputs across two scenarios showing arrivals, departures, and dwell time across four stations. Results are for educational purposes only.",
+  results: {
+    title: "Results & Discussion",
+    subtitle:
+      "SUMO speed-density analysis of edge E61 at Kipling Avenue and Dixon Road, comparing 100% HDVs, 100% CAVs, and a signal timing intervention.",
 
-			charts: {
-				left: {
-					title: "Scenario 1 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image6.jpg",
-					alt: "Scenario 1 train schedule chart showing arrivals and departures across S1 to S4"
-				},
-				right: {
-					title: "Scenario 2 — Train Schedule: Arrivals, Departures & Dwell Time",
-					src: "assets/img/image7.jpg",
-					alt: "Scenario 2 train schedule chart showing arrivals and departures across S1 to S4"
-				}
-			},
+    charts: {
+      left: {
+        title: "Base Scenario - 100% Human-Driven Vehicles",
+        src: "assets/img/image6.jpg",
+        alt: "Speed-density diagram for the 100% HDV baseline on edge E61"
+      },
+      right: {
+        title: "Scenario 1 - 100% Connected and Autonomous Vehicles",
+        src: "assets/img/image7.jpg",
+        alt: "Speed-density diagram for the 100% CAV scenario on edge E61"
+      }
+    },
 
-			discussionTitle: "Discussion",
-			discussionBullets: [
-				"Scenario 1 provides a stable baseline timetable with consistent station dwell and smooth train progression.",
-				"Scenario 2 applies a delay at S2, which then propagates to downstream stations.",
-				"Delay effects grow across frequency levels, with major increases in arrival and departure times at S3 and S4.",
-				"S1 is only slightly affected, while downstream stations absorb most of the disruption.",
-				"This demonstrates the importance of recovery time, dwell management, and operational control in rail scheduling."
-			]
-		},
+    discussionTitle: "Discussion",
+    discussionBullets: [
+      "The HDV baseline recorded a mean speed of 3.562 m/s and density of 63.077 veh/km.",
+      "The CAV scenario produced a similar mean speed of 3.576 m/s and density of 64.830 veh/km.",
+      "Signal green time was reallocated from 27/3/27/3 s to 36/3/18/3 s within the same 60-second cycle.",
+      "The intervention increased mean speed to 4.990 m/s and reduced density to 44.455 veh/km.",
+      "The results suggest signal timing improved simulated performance, although field validation is still required."
+    ]
+  },
 
   team: {
     title: "Team & Acknowledgments",
@@ -196,7 +197,7 @@ window.SITE_CONFIG = {
       "This section clarifies academic context, roles, tools, and sources. Clear attribution improves credibility and shows ethical data handling.",
 
     members: [
-      { name: "Your Name", role: "Rail Scheduling & Signaling + Digital Twin I, Immersive VR Visualization + Results & Communication" }
+      { name: "Ricardo Solis", role: "SUMO Road Network Development, Traffic Demand and Signal Configuration, HDV/CAV Scenario Development, Intervention Analysis, Results Visualization and Reporting" }
     ],
 
     acknowledgments: [
@@ -207,6 +208,6 @@ window.SITE_CONFIG = {
     ],
 
     repoLabel: "Project Repository",
-    repoUrl: "https://github.com/USERNAME/REPO"
+    repoUrl: "https://github.com/RicardoSolisMcMaster/smartcity-projecta.github.io"
   }
 };
