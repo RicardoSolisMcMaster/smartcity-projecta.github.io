@@ -59,12 +59,12 @@ window.SITE_CONFIG = {
 
   intro: {
     projectTitleLabel: "Project Title",
-    projectTitle: "SUMO-Based Traffic Simulation and Analysis of Kipling Avenue and Dixon Road: Autonomous Vehicles and Signal Timing Optimization",
+    projectTitle: "SUMO-Based Roadway Modelling and Speed-Density Assessment at Kipling Avenue and Dixon Road, Toronto: HDV/CAV Comparison and Signal-Timing Intervention",
     heroVideo: "assets/video/video.mp4",
     heroVideoPoster: "",
     heroVideoAlt: "SUMO roadway simulation of the Kipling Avenue and Dixon Road intersection",
     videoCaption:
-      "Project overview: GIS road network → NETEDIT development → SUMO traffic simulation → HDV and CAV comparison → Signal timing intervention → Speed-Density results"
+      "Project overview: GIS and NETEDIT roadway network → HDV baseline → 100% CAV comparison → 100% HDV signal-timing intervention → E61 speed-density results"
   },
 
   caseStudy: {
@@ -72,26 +72,26 @@ window.SITE_CONFIG = {
 
     backgroundTitle: "Background",
     backgroundBullets: [
-      "Urban traffic congestion affects roadway efficiency and travel reliability.",
-      "The study examines Kipling Avenue and Dixon Road in Toronto, Ontario.",
-      "NETEDIT and SUMO enable digital road network development and traffic simulation.",
-      "Speed-density analysis supports comparisons of vehicle behaviour and signal operations."
+      "Microscopic traffic simulation helps assess roadway geometry, vehicle interactions, and signal operations.",
+      "Group 4 examines Kipling Avenue and Dixon Road in Toronto using the course-assigned GIS map.",
+      "Stage A1 builds the digital network, while Stage A2 adds assumed traffic demand and signal control.",
+      "One upstream four-lane edge, E61, provides consistent speed-density evidence across scenarios."
     ],
 
     problemTitle: "Problem Statement",
     problemBullets: [
-      "A digital roadway and traffic baseline is needed to evaluate the selected intersection.",
-      "The effects of autonomous vehicles on traffic performance require simulation.",
-      "Existing signal timing may contribute to congestion on the selected approach.",
-      "The effectiveness of a signal timing intervention must be evaluated."
+      "The assigned intersection requires an integrated roadway network and 100% HDV traffic baseline for this study.",
+      "The effect of a fully CAV fleet on edge E61 cannot be assumed from the HDV baseline.",
+      "The effect of reallocating fixed-cycle signal green time on E61 must be tested.",
+      "One-edge simulation results cannot establish intersection-wide benefits or justify field implementation."
     ],
 
     objectivesTitle: "Project Objectives",
     objectivesBullets: [
-      "Develop the Kipling-Dixon SUMO road network and characterize the 100% HDV baseline.",
-      "Compare speed-density relationships for 100% HDVs and 100% CAVs on edge E61.",
-      "Evaluate a signal timing intervention using speed-density results on edge E61.",
-      "Present project methods and findings through an academic showcase website."
+      "Develop the Kipling-Dixon roadway-and-traffic model and characterize the 100% HDV baseline.",
+      "Compare and explain E61 speed-density behaviour under 100% CAVs versus the HDV baseline.",
+      "Implement and evaluate a fixed-cycle signal-timing intervention using E61 before-and-after evidence.",
+      "Communicate the project methodology, scenario comparisons, and limitations through this website."
     ]
   },
 
@@ -99,23 +99,23 @@ window.SITE_CONFIG = {
     title: "Methodology",
     steps: [
       {
-        title: "Step 1: Study Area Selection",
-        text: "Select the Kipling Avenue and Dixon Road intersection in Toronto using GIS imagery.",
+        title: "Step 1: Study Area Selection (GIS)",
+        text: "Select the assigned Kipling-Dixon intersection and its surrounding roads using the course GIS map.",
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Step 2: Road Network Development (NETEDIT)",
-        text: "Model roads, lanes, junctions, turning movements, and traffic connections in NETEDIT.",
+        title: "Step 2: Objective 1 - Road Network and HDV Baseline",
+        text: "Build roads and junctions in NETEDIT, then configure 3,000 veh/h nominal demand and the HDV baseline in SUMO.",
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Step 3: Traffic Simulation and Scenario Development (SUMO)",
-        text: "Simulate HDV and CAV traffic using consistent demand, routes, and signal settings.",
+        title: "Step 3: Objective 2 - Controlled 100% CAV Comparison",
+        text: "Change the active vehicle type to CAV while keeping the network, nominal flows, and signal settings fixed.",
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Step 4: Intervention and Results Analysis",
-        text: "Modify signal timing and compare speed-density results across three scenarios on edge E61.",
+        title: "Step 4: Objective 3 - Signal Intervention and Results",
+        text: "Change the HDV signal split from 27/3/27/3 s to 36/3/18/3 s and assess E61 results.",
         image: "assets/img/image5.jpg"
       }
     ]
@@ -125,38 +125,38 @@ window.SITE_CONFIG = {
     title: "Methodology Steps (Demo Modules)",
     modules: [
       {
-        title: "Module 1: Study Area Selection",
+        title: "Module 1: Study Area Selection (GIS)",
         bullets: [
-          { text: "Select Kipling Avenue and Dixon Road in Toronto as the study intersection." },
-          { text: "Use the assigned GIS map to identify roads, junctions, and study boundaries." },
-          { text: "Establish the roadway geometry reference for the SUMO network." }
+          { text: "Identify the assigned Kipling Avenue-Dixon Road intersection in Toronto." },
+          { text: "Use the course GIS image to trace major and local streets and junctions." },
+          { text: "Use the GIS reference to establish the network layout before simulation." }
         ],
         image: "assets/img/image2.jpg"
       },
       {
-        title: "Module 2: Road Network Development (NETEDIT)",
+        title: "Module 2: Objective 1 - Network and HDV Baseline",
         bullets: [
-          { text: "Import the GIS background and construct the road network in NETEDIT." },
-          { text: "Configure major and local roads, lane counts, and turning lanes." },
-          { text: "Verify junction geometry, lane connections, and permitted turning movements." }
+          { text: "Build the roadway in NETEDIT with 328 directed non-internal edges and 214 junction records." },
+          { text: "Configure 12 nominal traffic flows totalling 3,000 veh/h and a 60-second fixed signal cycle." },
+          { text: "Establish the 100% HDV baseline and measure speed and density on four-lane edge E61." }
         ],
         image: "assets/img/image3.jpg"
       },
       {
-        title: "Module 3: Traffic Simulation (SUMO)",
+        title: "Module 3: Objective 2 - Controlled CAV Scenario",
         bullets: [
-          { text: "Configure traffic demand, vehicle routes, and traffic signal phases." },
-          { text: "Simulate 100% HDV and 100% CAV scenarios under controlled conditions." },
-          { text: "Extract speed and density data from the same upstream edge E61." }
+          { text: "Retain the same network, nominal demand, routes, and signal program as the HDV baseline." },
+          { text: "Replace the HDV vehicle type with a 100% CAV type configured with CACC car following." },
+          { text: "Compare E61 speed-density observations over 36 common 100-second intervals." }
         ],
         image: "assets/img/image4.jpg"
       },
       {
-        title: "Module 4: Signal Intervention and Results",
+        title: "Module 4: Objective 3 - Signal-Timing Intervention",
         bullets: [
-          { text: "Reallocate signal green time while maintaining a 60-second cycle." },
-          { text: "Simulate the intervention using 100% HDVs and unchanged traffic demand." },
-          { text: "Compare speed-density diagrams and evaluate changes in roadway performance." }
+          { text: "Keep HDVs and shift the signal split from 27/3/27/3 to 36/3/18/3 seconds." },
+          { text: "Retain the baseline network and nominal traffic flows to isolate the timing change." },
+          { text: "Compare E61 speed-density results and communicate the findings and limits online." }
         ],
         image: "assets/img/image5.jpg"
       }
@@ -166,7 +166,7 @@ window.SITE_CONFIG = {
   results: {
     title: "Results & Discussion",
     subtitle:
-      "SUMO speed-density analysis of edge E61 at Kipling Avenue and Dixon Road, comparing 100% HDVs, 100% CAVs, and a signal timing intervention.",
+      "Speed-density evidence for edge E61: HDV baseline versus 100% CAV and 100% HDV with a signal-timing change; 36 matched 100-second intervals.",
 
     charts: {
       left: {
@@ -183,11 +183,11 @@ window.SITE_CONFIG = {
 
     discussionTitle: "Discussion",
     discussionBullets: [
-      "The HDV baseline recorded a mean speed of 3.562 m/s and density of 63.077 veh/km.",
-      "The CAV scenario produced a similar mean speed of 3.576 m/s and density of 64.830 veh/km.",
-      "Signal green time was reallocated from 27/3/27/3 s to 36/3/18/3 s within the same 60-second cycle.",
-      "The intervention increased mean speed to 4.990 m/s and reduced density to 44.455 veh/km.",
-      "The results suggest signal timing improved simulated performance, although field validation is still required."
+      "The 100% HDV baseline recorded 3.562 m/s mean interval speed and 63.077 veh/km mean edge density.",
+      "The 100% CAV run recorded 3.576 m/s and 64.830 veh/km; matched-density differences were small and non-uniform.",
+      "For the HDV intervention, Phase 0 gained 9 s and Phase 2 lost 9 s; the 60-second cycle stayed unchanged.",
+      "On E61, intervention mean speed rose to 4.990 m/s (+40.1%) and density fell to 44.455 veh/km (-29.5%).",
+      "The local outcome supports further testing, not an optimal-timing or intersection-wide benefit claim; field calibration is absent."
     ]
   },
 
@@ -201,10 +201,10 @@ window.SITE_CONFIG = {
     ],
 
     acknowledgments: [
-      "Workshop: Railway Engineering",
-      "Institution: RoadwayVR University",
-      "Instructor: Ahmad Mohammadi",
-      "Tools: SUMO, Blender, Unity, Python"
+      "Course: SMRTTECH 4SC3 - Smart Cities and Communities",
+      "Institution: McMaster University",
+      "Lab Instructor: Dr. Ahmad Mohammadi",
+      "Tools: SUMO, NETEDIT, GIS imagery, edgeData analysis"
     ],
 
     repoLabel: "Project Repository",
